@@ -1,9 +1,14 @@
 from setuptools import setup, find_packages
- 
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name                = 'ezst',
-    version             = '0.1',
+    version             = '0.1.1',
     description         = 'ai library for education',
+    long_description    = long_description,
+    long_description_content_type   ="text/markdown",
     author              = 'aiacademy',
     author_email        = 'aiacademy131@gamil.com',
     # 배포하는 패키지의 url을 적어줍니다. 보통 github 링크를 적습니다.
